@@ -1,0 +1,7 @@
+{
+  "name": "ObraPrime CRM",
+  "description": "Um CRM completo para vendedores de concreto usinado, permitindo o gerenciamento de clientes e suas múltiplas obras, cada uma com seus próprios traços e volumes de concreto. Otimizado para uso em dispositivos móveis.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ObraPrime CRM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#F97316', // Laranja ObraPrime for primary buttons, highlights
+                dark: '#0F172A',     // Dark blue/slate for headers and footers
+                hover: '#EA580C',
+              },
+              secondary: {
+                DEFAULT: '#2563EB', // Blue for links, secondary actions
+                hover: '#1D4ED8',
+              },
+              background: '#F3F4F6', // Light gray app background
+              card: '#FFFFFF',       // White for cards, forms, inputs
+              text: {
+                main: '#111827',     // Main text color
+                secondary: '#4B5563', // Labels, secondary text
+                placeholder: '#9CA3AF',
+              },
+              border: '#D1D5DB',      // Borders for inputs, dividers
+              error: '#DC2626',
+              alert: '#FBBF24',
+              success: '#16A34A',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-background">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
